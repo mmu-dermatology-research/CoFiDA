@@ -2,6 +2,8 @@
 
 # CoFiDA-M: Concept-Aware Feature Modulation for Cross-Domain Adaptation with Image-Only Inference 
 ## CoFiDA-M Architecture
+#### Authors: Nurjahan Sultana, Moi Hoon Yap, Xinqi Fan, and Wenqi Lu
+
 ![Architecture](./CoFiDA_arch.png)
 
 ## Abstract

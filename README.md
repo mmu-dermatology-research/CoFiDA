@@ -1,3 +1,3 @@
 # CoFiDA
-## Model architecture
+
 

@@ -9,7 +9,7 @@ Models for AI-based skin cancer screening suffer a severe performance drop when 
 
 ## Problem and Proposed Solution
 <p align="center">
-  <img src="./D_Paradox.png" width="450" alt="P&S">
+  <img src="./D_Paradox.png" width="500" alt="P&S">
 </p>
 
 

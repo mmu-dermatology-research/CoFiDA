@@ -50,3 +50,7 @@ CoFiDA was compared against 14 baseline methods in 4 categories and a source onl
 * Distillation feature alignment weight analysis (supp)
 
 Code: Coming Soon...
+
+## Contact
+
+For questions or further discussion, please contact: nurjahan.sultana@stu.mmu.ac.uk

@@ -28,9 +28,6 @@ This work was evaluated on eight public skin lesion datasets for binary classifi
 * [HAM10000](https://www.nature.com/articles/sdata2018161)
 * [Fitzpatrick17k](https://github.com/mattgroh/fitzpatrick17k)
 
-## Baseline
-CoFiDA was compared against 14 baseline methods in 4 categories and a source only setting.
-
 ## Evaluation
 * AUROC (main)
 * Melanoma recall (main)

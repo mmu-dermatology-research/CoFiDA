@@ -15,7 +15,7 @@ Models for AI-based skin cancer screening suffer a severe performance drop when 
 </p>
 
 ## Dataset
-This work was evaluated on eight public skin lesion datasets.
+This work was evaluated on eight public skin lesion datasets for binary classification between melanoma and other lesions.
 
 * MILK10K dermoscopic
 * MILK10K clinical

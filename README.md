@@ -14,5 +14,37 @@ Models for AI-based skin cancer screening suffer a severe performance drop when 
   <img src="./D_Paradox.png" width="500" alt="P&S">
 </p>
 
+## Dataset
+This work was evaluated on eight public skin lesion datasets.
+
+* MILK10K dermoscopic
+* MILK10K clinical
+* Derm7pt dermoscopic
+* Derm7pt clinical
+* MIDAS dermoscopic
+* MIDAS clinical
+* HAM10000
+* Fitzpatrick
+
+## Baseline
+CoFiDA was compared against 14 baseline methods in 4 categories and a source only setting.
+
+## Evaluation
+* AUROC (main)
+* Melanoma recall (main)
+* Balanced accuracy (supp)
+
+## Qualitative Analysis
+* Confidence gap comparison (main)
+* Inference speed comparison (main)
+* t-SNE of image only student features (main)
+* Feature editing maps with Grad-CAM before and after FiLM editing (main)
+* Feature space transformation analysis (main)
+* MONET concept influence visualisation (main)
+* Attention distribution analysis (main)
+* Qualitative validation of implicit concept learning and student teacher alignment (main)
+* Extended balanced accuracy statistical analysis (supp)
+* Detailed ablation visualisation on MONET concept subsets (supp)
+* Distillation feature alignment weight analysis (supp)
 
 Code: Coming Soon...

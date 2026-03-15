@@ -21,8 +21,8 @@ This work was evaluated on eight public skin lesion datasets for binary classifi
 
 * [MILK10K dermoscopic](https://api.isic-archive.com/doi/milk10k/)
 * [MILK10K clinical](https://api.isic-archive.com/doi/milk10k/)
-* [Derm7pt dermoscopic](https://derm.cs.sfu.ca/)
-* [Derm7pt clinical](https://derm.cs.sfu.ca/)
+* [Derm7pt dermoscopic](https://derm.cs.sfu.ca/Welcome.html)
+* [Derm7pt clinical](https://derm.cs.sfu.ca/Welcome.html)
 * [MIDAS dermoscopic](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer)
 * [MIDAS clinical](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer)
 * [HAM10000](https://www.nature.com/articles/sdata2018161)

@@ -17,14 +17,16 @@ Models for AI-based skin cancer screening suffer a severe performance drop when 
 ## Dataset
 This work was evaluated on eight public skin lesion datasets for binary classification between melanoma and other lesions.
 
-* MILK10K dermoscopic
-* MILK10K clinical
-* Derm7pt dermoscopic
-* Derm7pt clinical
-* MIDAS dermoscopic
-* MIDAS clinical
-* HAM10000
-* Fitzpatrick
+## Dataset Links
+
+* [MILK10K dermoscopic](https://api.isic-archive.com/doi/milk10k/)
+* [MILK10K clinical](https://api.isic-archive.com/doi/milk10k/)
+* [Derm7pt dermoscopic](https://derm.cs.sfu.ca/Download.html)
+* [Derm7pt clinical](https://derm.cs.sfu.ca/Download.html)
+* [MIDAS dermoscopic](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer)
+* [MIDAS clinical](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer)
+* [HAM10000](https://www.nature.com/articles/sdata2018161)
+* [Fitzpatrick17k](https://github.com/mattgroh/fitzpatrick17k)
 
 ## Baseline
 CoFiDA was compared against 14 baseline methods in 4 categories and a source only setting.

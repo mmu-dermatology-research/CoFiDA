@@ -33,19 +33,19 @@ This work was evaluated on eight public skin lesion datasets for binary classifi
 * Melanoma recall (main)
 * Balanced accuracy (supp)
 
-## Qualitative Analysis
-* Qualitative validation of the CoFiDA-M framework with four subplots (main)
-  * Implicit concept learning via edit magnitude correlation
-  * Teacher feature editing mechanism transforming feature space
-  * Concept guided feature steering
-  * Student teacher feature alignment
-* Extended balanced accuracy statistical analysis (supp)
-* Detailed ablation visualisation on MONET concept subsets (supp)
-* Distillation feature alignment weight analysis (supp)
+## Figures
+* Teacher knowledge ablation: training loss, performance, and feature separation (main)
+* CoFiDA-M qualitative validation with four subplots (main)
+* Extended balanced accuracy analysis (supp)
+* MONET concept subset ablation (supp)
+* Distillation alignment weight analysis (supp)
 * Confidence gap comparison (supp)
 * Inference speed comparison (supp)
 * t-SNE of image only student features (supp)
-* Feature editing maps with Grad-CAM before and after FiLM editing, including feature space transformation, MONET concept influence, and attention distribution analysis (supp)
+* Feature editing maps with Grad-CAM (supp)
+* Feature space transformation analysis (supp)
+* MONET concept influence visualisation (supp)
+* Attention distribution analysis (supp)
 
 Code: Coming Soon...
 

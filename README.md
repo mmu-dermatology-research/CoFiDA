@@ -34,10 +34,10 @@ This work was evaluated on eight public skin lesion datasets for binary classifi
 * Balanced accuracy (supp)
 
 ## Figures
-* Teacher knowledge ablation: training loss, performance, and feature separation (main)
+* Ablation on teacher knowledge: training loss, performance, and feature separation (main)
 * CoFiDA-M qualitative validation with four subplots (main)
 * Extended balanced accuracy analysis (supp)
-* MONET concept subset ablation (supp)
+* Ablation on MONET concept subsets (supp)
 * Distillation alignment weight analysis (supp)
 * Confidence gap comparison (supp)
 * Inference speed comparison (supp)

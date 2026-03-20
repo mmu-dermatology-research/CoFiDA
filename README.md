@@ -57,7 +57,7 @@ The project is organized so someone else can clone it, install dependencies, poi
 ## Project Layout
 
 ```text
-cofida_github_project/
+CoFiDA/
 ├── pyproject.toml
 ├── requirements.txt
 ├── README.md
@@ -84,7 +84,7 @@ cofida_github_project/
 ## Install
 
 ```bash
-cd cofida_github_project
+cd CoFiDA
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

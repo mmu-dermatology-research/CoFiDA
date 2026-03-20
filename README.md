@@ -2,7 +2,7 @@
 
 # CoFiDA-M: Concept-Aware Feature Modulation for Cross-Domain Adaptation with Image-Only Inference 
 ### Authors: Nurjahan Sultana, Moi Hoon Yap, Xinqi Fan, and Wenqi Lu
-
+### CoFiDA-M is a multimodal framework for skin lesion analysis designed for domain adaptation, while supporting image-only inference at test time.
 ## CoFiDA-M Architecture
 ![Architecture](./CoFiDA_arch.png)
 

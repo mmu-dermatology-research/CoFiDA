@@ -47,7 +47,150 @@ This work was evaluated on eight public skin lesion datasets for binary classifi
 * MONET concept influence visualisation (supp)
 * Attention distribution analysis (supp)
 
-Code: Coming Soon...
+# CoFiDA-M Project (How to run)
+
+1. Stage 1: Train the `CoFIDA + MONET` teacher on labelled dermoscopic source data with unlabeled clinical target adaptation.
+2. Stage 2: Distill that teacher into an image-only student for clinical inference.
+
+The project is organized so someone else can clone it, install dependencies, point to their dataset paths, and run the training or evaluation scripts from the command line.
+
+## Project Layout
+
+```text
+cofida_github_project/
+├── pyproject.toml
+├── requirements.txt
+├── README.md
+├── scripts/
+│   ├── train_teacher.py
+│   ├── eval_teacher.py
+│   ├── train_student.py
+│   ├── eval_student.py
+│   └── export_student_split.py
+└── src/
+    └── cofida/
+        ├── __init__.py
+        ├── checkpointing.py
+        ├── cli.py
+        ├── data.py
+        ├── evaluate.py
+        ├── metrics.py
+        ├── models.py
+        ├── student.py
+        ├── teacher.py
+        └── utils.py
+```
+
+## Install
+
+```bash
+cd cofida_github_project
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pip install -e .
+```
+
+## Quick Start
+
+Run the full project in this order:
+
+1. Train the teacher with `scripts/train_teacher.py`
+2. Evaluate the teacher with `scripts/eval_teacher.py`
+3. Train the student with `scripts/train_student.py`
+4. Optionally export the student split with `scripts/export_student_split.py`
+5. Evaluate the student with `scripts/eval_student.py`
+
+If you want to see the command format quickly, open any file in `scripts/` because each script now includes a short run example at the top.
+
+## Expected Dataset Layout
+
+The training and evaluation scripts assume image folders like:
+
+```text
+dataset_root/
+├── mel/
+│   ├── image1.jpg
+│   └── ...
+└── other/
+    ├── image2.jpg
+    └── ...
+```
+
+For MIDAS-style evaluation, `eval_student.py` also supports multi-class folders and automatically maps any class name containing `mel` to melanoma and everything else to `other`.
+
+## Stage 1: Train Teacher
+
+```bash
+python scripts/train_teacher.py \
+  --source-dir /path/to/dermoscopic/train/images \
+  --target-dir /path/to/clinical/train/images \
+  --target-val-dir /path/to/clinical/val/images \
+  --monet-csv /path/to/MONET_metadata.csv \
+  --save-dir outputs/teacher
+```
+
+Useful optional flags:
+
+```bash
+python scripts/train_teacher.py --help
+```
+
+## Stage 1: Evaluate Teacher
+
+```bash
+python scripts/eval_teacher.py \
+  --test-dir /path/to/clinical/val/images \
+  --monet-csv /path/to/MONET_metadata.csv \
+  --checkpoint outputs/teacher/best_cofida_monet.pt \
+  --out-csv outputs/teacher/clinical_val_predictions.csv
+```
+
+## Stage 2: Train Student
+
+```bash
+python scripts/train_student.py \
+  --teacher-checkpoint outputs/teacher/best_cofida_monet.pt \
+  --target-dir /path/to/clinical/train/images \
+  --monet-csv /path/to/MONET_metadata.csv \
+  --save-dir outputs/student
+```
+
+Useful optional flags:
+
+```bash
+python scripts/train_student.py --help
+```
+
+## Optional: Export the Student Train/Val Split
+
+```bash
+python scripts/export_student_split.py \
+  --target-dir /path/to/clinical/train/images \
+  --monet-csv /path/to/MONET_metadata.csv \
+  --output-dir outputs/student
+```
+
+## Stage 2: Evaluate Student
+
+Binary `mel/other` layout:
+
+```bash
+python scripts/eval_student.py \
+  --test-dir /path/to/clinical/val/images \
+  --checkpoint outputs/student/best_student.pt \
+  --out-csv outputs/student/student_predictions.csv
+```
+
+MIDAS-style multi-class layout:
+
+```bash
+python scripts/eval_student.py \
+  --test-dir /path/to/midas/images/clinical \
+  --checkpoint outputs/student/best_student.pt \
+  --out-csv outputs/student/midas_clinical_predictions.csv \
+  --auto-map-melanoma
+```
 
 ## Contact
 

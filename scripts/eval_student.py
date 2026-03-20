@@ -3,13 +3,11 @@ Run example:
 python scripts/eval_student.py \
   --test-dir /path/to/test \
   --checkpoint path/to/best_student.pt \
-  --out-csv /path/to/student_predictions.csv
 
 MIDAS-style example:
 python scripts/eval_student.py \
   --test-dir /path/to/midas/images/clinical \
   --checkpoint outputs/student/best_student.pt \
-  --out-csv outputs/student/midas_clinical_predictions.csv \
   --auto-map-melanoma
 
 Use `python scripts/eval_student.py --help` for all options.

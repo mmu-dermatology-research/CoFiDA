@@ -180,7 +180,6 @@ Binary `mel/other` layout:
 python scripts/eval_student.py \
   --test-dir /path/to/clinical/val/images \
   --checkpoint outputs/student/best_student.pt \
-  --out-csv outputs/student/student_predictions.csv
 ```
 
 MIDAS-style multi-class layout:
@@ -189,7 +188,6 @@ MIDAS-style multi-class layout:
 python scripts/eval_student.py \
   --test-dir /path/to/midas/images/clinical \
   --checkpoint outputs/student/best_student.pt \
-  --out-csv outputs/student/midas_clinical_predictions.csv \
   --auto-map-melanoma
 ```
 

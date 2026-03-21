@@ -50,7 +50,7 @@ This work was evaluated on eight public skin lesion datasets for binary classifi
 
 # CoFiDA-M Project (How to run)
 
-1. Stage 1: Train the `CoFIDA + MONET` teacher on labelled dermoscopic source data with unlabeled clinical target adaptation.
+1. Stage 1: Train the `CoFIDA + MONET` teacher on labeled dermoscopic source data with unlabeled clinical target adaptation.
 2. Stage 2: Distill that teacher into an image-only student for clinical inference.
 
 The project is organized so someone else can clone it, install dependencies, point to their dataset paths, and run the training or evaluation scripts from the command line.

@@ -3,7 +3,7 @@
 
 ## Poster
 
-![CoFiDA-M CVPR poster](./assets/poster.png)
+![CoFiDA-M CVPR poster](./CoFiDA_poster.png)
 
 # CoFiDA-M: Concept-Aware Feature Modulation for Cross-Domain Adaptation with Image-Only Inference 
 ### Authors: Nurjahan Sultana, Moi Hoon Yap, Xinqi Fan, and Wenqi Lu

@@ -1,4 +1,4 @@
-# CVPR'26
+# CVPR'26 Main Track
 ### This is a multimodal framework for skin lesion analysis designed for domain adaptation, while supporting image-only inference at test time.
 
 # CoFiDA-M: Concept-Aware Feature Modulation for Cross-Domain Adaptation with Image-Only Inference 

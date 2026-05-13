@@ -2,7 +2,8 @@
 ### This is a multimodal framework for skin lesion analysis designed for domain adaptation, while supporting image-only inference at test time.
 
 ## Poster
-![Poster](./CoFiDA_CoFiDA-M_42894.pdf)
+
+[View the poster PDF](./CoFiDA_CoFiDA-M_42894.pdf)
 
 # CoFiDA-M: Concept-Aware Feature Modulation for Cross-Domain Adaptation with Image-Only Inference 
 ### Authors: Nurjahan Sultana, Moi Hoon Yap, Xinqi Fan, and Wenqi Lu

@@ -193,6 +193,8 @@ python scripts/eval_student.py \
   --checkpoint outputs/student/best_student.pt \
   --auto-map-melanoma
 ```
+### YouTube Short Description
+https://youtu.be/fD9SiGbGIxc?si=yxLKaVaMnPSyKsV8
 
 ## Contact
 

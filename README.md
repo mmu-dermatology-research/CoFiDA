@@ -1,7 +1,7 @@
 # CVPR'26 Main Track
 ### This is a multimodal framework for skin lesion analysis designed for domain adaptation, while supporting image-only inference at test time.
 
-## Poster: @ Denver, Colorado, United States on 6th June 2026
+## @ Denver, Colorado, United States on 6th June 2026
 
 <img src="./poster.png" alt="CoFiDA-M CVPR poster" width="100%">
 

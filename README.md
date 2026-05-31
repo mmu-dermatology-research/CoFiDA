@@ -194,6 +194,22 @@ python scripts/eval_student.py \
   --checkpoint outputs/student/best_student.pt \
   --auto-map-melanoma
 ```
+
+
+### 📚 Citation
+
+If you use any of the concepts or code from this repository, please consider citing our paper:
+
+```bibtex
+@InProceedings{Sultana_2026_CVPR,
+    author    = {Sultana, Nurjahan and Yap, Moi Hoon and Fan, Xinqi and Lu, Wenqi},
+    title     = {CoFiDA-M: Concept-Aware Feature Modulation for Cross-Domain Adaptation with Image-Only Inference},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {15060-15069}
+}
+```
 ### YouTube Short Description
 https://youtu.be/fD9SiGbGIxc?si=yxLKaVaMnPSyKsV8
 

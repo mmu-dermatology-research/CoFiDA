@@ -3,6 +3,8 @@
 
 ## @ Denver, Colorado, United States on 6th June 2026
 
+# DOI: https://doi.org/10.48550/arXiv.2605.31591
+
 <img src="./poster.png" alt="CoFiDA-M CVPR poster" width="100%">
 
 # CoFiDA-M: Concept-Aware Feature Modulation for Cross-Domain Adaptation with Image-Only Inference 
